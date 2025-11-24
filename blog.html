@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Gaming Community</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎮%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-gamepad"></i>
+                    <span>GameZone</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Gaming Blog</h1>
+            <p>Latest news, updates, and insights from the gaming world</p>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="blog-controls">
+        <div class="container">
+            <div class="blog-search-filter">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="blogSearch" placeholder="Search articles...">
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="fps">FPS</button>
+                    <button class="filter-btn" data-category="rpg">RPG</button>
+                    <button class="filter-btn" data-category="moba">MOBA</button>
+                    <button class="filter-btn" data-category="sports">Sports Games</button>
+                    <button class="filter-btn" data-category="mobile">Mobile Games</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid" id="blogGrid">
+                <article class="blog-card" data-category="fps">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200&q=80" alt="Valorant Game">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">FPS</span>
+                        <h2>Valorant Patch 7.08: New Agent and Map Updates</h2>
+                        <p class="blog-excerpt">The latest Valorant update introduces a new agent with unique abilities and significant map changes that will shake up the competitive meta.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <a href="blog-details.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="moba">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1556438064-2d7646166914?w=1200&q=80" alt="League of Legends">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">MOBA</span>
+                        <h2>League of Legends Season 14 Meta Analysis</h2>
+                        <p class="blog-excerpt">Breaking down the current meta, strongest champions, and strategies dominating ranked play in Season 14.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 12, 2024</span>
+                            <span><i class="far fa-user"></i> Pro Player</span>
+                        </div>
+                        <a href="blog-details.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="sports">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1200&q=80" alt="FIFA Game">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Sports Games</span>
+                        <h2>FIFA 24 Ultimate Team: Best Players This Season</h2>
+                        <p class="blog-excerpt">Discover the top-rated players and build the ultimate squad with our comprehensive FIFA 24 guide.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 10, 2024</span>
+                            <span><i class="far fa-user"></i> GameZone Team</span>
+                        </div>
+                        <a href="blog-details.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="fps">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=1200&q=80" alt="CS:GO Game">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">FPS</span>
+                        <h2>CS:GO 2 Competitive Scene: What's Changed?</h2>
+                        <p class="blog-excerpt">An in-depth look at how CS:GO 2 has transformed the competitive landscape and what players need to know.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 8, 2024</span>
+                            <span><i class="far fa-user"></i> Esports Analyst</span>
+                        </div>
+                        <a href="blog-details.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="rpg">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&q=80" alt="RPG Games">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">RPG</span>
+                        <h2>Top 10 RPG Games to Play in 2024</h2>
+                        <p class="blog-excerpt">From epic fantasy adventures to sci-fi epics, here are the must-play RPG games releasing this year.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 5, 2024</span>
+                            <span><i class="far fa-user"></i> GameZone Team</span>
+                        </div>
+                        <a href="blog-details.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="mobile">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=1200&q=80" alt="Mobile Gaming">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Mobile Games</span>
+                        <h2>Mobile Esports: The Rising Competitive Scene</h2>
+                        <p class="blog-excerpt">Mobile gaming is taking esports by storm. Learn about the biggest mobile tournaments and rising stars.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 3, 2024</span>
+                            <span><i class="far fa-user"></i> Mobile Gaming Expert</span>
+                        </div>
+                        <a href="blog-details.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="fps">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=1200&q=80" alt="PUBG Game">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">FPS</span>
+                        <h2>PUBG New Map: Desert Storm First Impressions</h2>
+                        <p class="blog-excerpt">We dive into the new desert map, exploring its unique features, strategic locations, and gameplay mechanics.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 1, 2024</span>
+                            <span><i class="far fa-user"></i> GameZone Team</span>
+                        </div>
+                        <a href="blog-details.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="moba">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1200&q=80" alt="Dota 2 Tournament">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">MOBA</span>
+                        <h2>Dota 2 International 2024: Teams to Watch</h2>
+                        <p class="blog-excerpt">Preview of the biggest Dota 2 tournament of the year and the teams most likely to claim the Aegis.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> February 28, 2024</span>
+                            <span><i class="far fa-user"></i> Esports Analyst</span>
+                        </div>
+                        <a href="blog-details.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="sports">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/71103/basketball-sports-teams-players-71103.jpeg" alt="NBA 2K Game">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Sports Games</span>
+                        <h2>NBA 2K24 MyCareer: Best Builds Guide</h2>
+                        <p class="blog-excerpt">Create the perfect player build with our comprehensive guide to attributes, badges, and playstyles.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> February 25, 2024</span>
+                            <span><i class="far fa-user"></i> GameZone Team</span>
+                        </div>
+                        <a href="blog-details.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameZone</h3>
+                    <p>The ultimate gaming community for esports, tournaments, and competitive gaming.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Leaderboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GameZone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
